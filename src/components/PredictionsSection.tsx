@@ -1,17 +1,13 @@
-
 import PredictionsTable from "./PredictionsTable";
-
 const PredictionsSection = () => {
-  return (
-    <section className="section-padding">
+  return <section className="section-padding">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
             Pronostici, gestiti come vuoi
           </h2>
-          <p className="text-lg text-gray-700 text-center mb-8">
-            Crea una singola, una multipla o importa CSV delle tue giocate. Collega limiti di stake, tagga partite, monitora ROI in tempo reale.
-          </p>
+          <p className="text-lg text-gray-700 text-center mb-8">Crea una singola o una multipla.
+ Collega limiti di stake, tagga partite, monitora ROI in tempo reale.</p>
           
           <div className="rounded-xl overflow-hidden">
             <PredictionsTable />
@@ -33,8 +29,6 @@ const PredictionsSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PredictionsSection;
