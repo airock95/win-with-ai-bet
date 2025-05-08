@@ -6,6 +6,7 @@ import BankrollSection from "@/components/BankrollSection";
 import SecuritySection from "@/components/SecuritySection";
 import ComparisonSection from "@/components/ComparisonSection";
 import AISection from "@/components/AISection";
+import FaqSection from "@/components/FaqSection";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
 
@@ -19,6 +20,7 @@ const Index = () => {
       <SecuritySection />
       <ComparisonSection />
       <AISection />
+      <FaqSection />
       <CallToAction />
       <Footer />
     </div>
