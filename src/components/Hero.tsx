@@ -1,26 +1,16 @@
-
 import { Button } from "@/components/ui/button";
-
 const Hero = () => {
-  return (
-    <section className="min-h-screen flex flex-col justify-center relative overflow-hidden decorative-lines">
+  return <section className="min-h-screen flex flex-col justify-center relative overflow-hidden decorative-lines">
       <div className="absolute inset-0 w-full h-full decorative-lines opacity-30 pointer-events-none"></div>
       
       <div className="container mx-auto px-4 md:px-6 pt-16 md:pt-24 flex flex-col md:flex-row items-center justify-between gap-12 z-10">
         <div className="max-w-3xl space-y-6 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            Basta perdite. Vinci con i pronostici scientifici dell'IA sulla Serie A/B ⚽🤖
-          </h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">Basta perdite. Vinci con i pronostici scientifici di Scommessa Intelligente 🤖</h1>
           
-          <h2 className="text-xl md:text-2xl text-gray-700">
-            La nostra Intelligenza Artificiale analizza migliaia di dati per ogni match e ti consegna solo scommesse di valore. 
-            Dì addio ai tipster "truffatori" e alle schedine a caso.
-          </h2>
+          <h2 className="text-xl md:text-2xl text-gray-700">La nostra Intelligenza Artificiale analizza migliaia di dati per ogni match e ti consegna solo scommesse di valore. Dì addio ai tipster "truffatori" e alle schedine casuali.</h2>
           
           <div className="space-y-3 pt-4">
-            <Button size="lg" className="gradient-bg text-white font-medium text-lg px-8 py-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
-              Inizia la prova gratuita
-            </Button>
+            <Button size="lg" className="gradient-bg text-white font-medium text-lg px-8 py-6 rounded-lg shadow-lg hover:shadow-xl transition-all">Iniza ora gratis</Button>
             <p className="text-sm text-gray-600 flex items-center justify-center md:justify-start">
               <span className="mr-2">💳</span> Nessuna carta di credito richiesta
             </p>
@@ -82,7 +72,9 @@ const Hero = () => {
                     <span className="text-green-500">68%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div className="gradient-bg h-2 rounded-full" style={{ width: '68%' }}></div>
+                    <div className="gradient-bg h-2 rounded-full" style={{
+                    width: '68%'
+                  }}></div>
                   </div>
                 </div>
               </div>
@@ -91,8 +83,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
