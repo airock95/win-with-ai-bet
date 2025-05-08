@@ -67,8 +67,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				aiwinbet: {
-					blue: '#5E7BFF',
-					purple: '#BD5EFF'
+					green: '#007A55', // Emerald Green
+					blue: '#275E8E',  // Slate Blue
+					lime: '#C4FF48',  // Lime Neon
+					light: '#FFFFFF', // White
+					dark: '#1C1C1C'   // Graphite
 				}
 			},
 			borderRadius: {
