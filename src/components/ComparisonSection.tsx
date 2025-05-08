@@ -34,12 +34,6 @@ const ComparisonSection = () => {
       telegram: false,
       excel: false,
       aiwinbet: "✔️ immediati"
-    },
-    {
-      feature: "Prova gratuita",
-      telegram: "A pagamento",
-      excel: "n/a",
-      aiwinbet: "✔️ senza carta"
     }
   ];
   
