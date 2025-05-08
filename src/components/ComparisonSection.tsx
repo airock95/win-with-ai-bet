@@ -9,23 +9,23 @@ const ComparisonSection = () => {
   const comparisons = [{
     feature: "Basato su dati",
     telegram: false,
-    excel: "✔️ parziale",
-    aiwinbet: "✔️ 120 variabili/match"
+    excel: "Parziale",
+    aiwinbet: "120 var/match"
   }, {
-    feature: "Aggiornamento quote live",
+    feature: "Quote live",
     telegram: false,
     excel: false,
-    aiwinbet: "✔️ ogni 0,1 s"
+    aiwinbet: "0,1 sec"
   }, {
-    feature: "EV% calcolato e mostrato",
+    feature: "EV% calcolato",
     telegram: false,
     excel: false,
-    aiwinbet: "✔️ visibile"
+    aiwinbet: "Visibile"
   }, {
     feature: "Alert push",
     telegram: false,
     excel: false,
-    aiwinbet: "✔️ immediati"
+    aiwinbet: "Immediati"
   }];
 
   return (
@@ -34,7 +34,7 @@ const ComparisonSection = () => {
         <div className="max-w-3xl mx-auto mb-12 animate-fade-in">
           
           <p className="text-gray-700 text-center mb-8 font-medium text-2xl md:text-3xl">
-            Scopri perché Scommessa Intelligente è superiore ad altre soluzioni per le tue scommesse
+            Scopri perché Scommessa Intelligente è superiore ad altre soluzioni
           </p>
           
           <div className="overflow-x-auto rounded-xl shadow-lg">
@@ -42,41 +42,41 @@ const ComparisonSection = () => {
               <Table>
                 <TableHeader>
                   <TableRow>
-                    <TableHead className={`${isMobile ? 'w-2/5' : 'w-1/4'} bg-gray-100`}>Caratteristiche</TableHead>
+                    <TableHead className={`${isMobile ? 'w-1/3' : 'w-1/4'} bg-gray-100`}>Funzioni</TableHead>
                     <TableHead className={`${isMobile ? 'w-1/5' : 'w-1/4'} bg-gray-100 text-center`}>
-                      {isMobile ? 'Telegram' : 'Tipster su Telegram'}
+                      Telegram
                     </TableHead>
                     <TableHead className={`${isMobile ? 'w-1/5' : 'w-1/4'} bg-gray-100 text-center`}>
-                      {isMobile ? 'Excel' : 'Fogli Excel fai-da-te'}
+                      Excel
                     </TableHead>
-                    <TableHead className={`${isMobile ? 'w-1/5' : 'w-1/4'} bg-gray-100 text-center bg-aiwinbet-green text-white`}>
-                      {isMobile ? 'Noi' : 'Scommessa Intelligente'}
+                    <TableHead className={`${isMobile ? 'w-1/4' : 'w-1/4'} bg-gray-100 text-center bg-aiwinbet-green text-white`}>
+                      Noi
                     </TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {comparisons.map(item => (
                     <TableRow key={item.feature}>
-                      <TableCell className="font-medium text-sm md:text-base">{item.feature}</TableCell>
-                      <TableCell className="text-center">
+                      <TableCell className="font-medium text-xs md:text-base">{item.feature}</TableCell>
+                      <TableCell className="text-center p-2">
                         {typeof item.telegram === "boolean" ? 
                           item.telegram ? 
-                            <Check className="h-5 w-5 text-aiwinbet-green mx-auto" /> : 
-                            <X className="h-5 w-5 text-red-500 mx-auto" /> : 
+                            <Check className="h-4 w-4 text-aiwinbet-green mx-auto" /> : 
+                            <X className="h-4 w-4 text-red-500 mx-auto" /> : 
                           item.telegram}
                       </TableCell>
-                      <TableCell className="text-center">
+                      <TableCell className="text-center p-2">
                         {typeof item.excel === "boolean" ? 
                           item.excel ? 
-                            <Check className="h-5 w-5 text-aiwinbet-green mx-auto" /> : 
-                            <X className="h-5 w-5 text-red-500 mx-auto" /> : 
+                            <Check className="h-4 w-4 text-aiwinbet-green mx-auto" /> : 
+                            <X className="h-4 w-4 text-red-500 mx-auto" /> : 
                           item.excel}
                       </TableCell>
-                      <TableCell className="text-center font-medium text-sm md:text-base">
+                      <TableCell className="text-center p-2 text-xs md:text-sm font-medium">
                         {typeof item.aiwinbet === "boolean" ? 
                           item.aiwinbet ? 
-                            <Check className="h-5 w-5 text-aiwinbet-green mx-auto" /> : 
-                            <X className="h-5 w-5 text-red-500 mx-auto" /> : 
+                            <Check className="h-4 w-4 text-aiwinbet-green mx-auto" /> : 
+                            <X className="h-4 w-4 text-red-500 mx-auto" /> : 
                           item.aiwinbet}
                       </TableCell>
                     </TableRow>
