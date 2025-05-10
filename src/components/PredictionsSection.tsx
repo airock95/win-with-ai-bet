@@ -6,7 +6,7 @@ const PredictionsSection = () => {
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">La nostra AI lavora H24, tu ottieni il dato che conta.</h2>
-          <p className="text-lg text-gray-700 text-center mb-8">Crea una singola o una multipla. Collega limiti di stake, tagga partite, monitora il ROI in tempo reale.</p>
+          
           
           {/* Solution Section - 4 Column Icons */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12">
