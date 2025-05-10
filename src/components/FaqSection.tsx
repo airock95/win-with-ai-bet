@@ -9,10 +9,6 @@ import {
 const FaqSection = () => {
   const faqs = [
     {
-      question: "Cos'è l'EV% di cui parlate sempre?",
-      answer: "EV sta per \"Expected Value\", valore atteso. Confrontiamo la probabilità reale (calcolata dall'algoritmo su 120 variabili) con la quota offerta dal bookmaker. Se il margine è positivo — per esempio, EV = +7 % — significa che, puntando su quel mercato ogni volta che l'EV è simile, nel lungo periodo ci si aspetta un ritorno medio del 7 % sul capitale investito. È il cuore del nostro metodo scientifico."
-    },
-    {
       question: "L'IA garantisce che vinco sempre?",
       answer: "No. Lo sport resta imprevedibile. Ma selezionare solo scommesse con EV positivo aumenta statisticamente le tue probabilità di profitto nel lungo termine."
     },
