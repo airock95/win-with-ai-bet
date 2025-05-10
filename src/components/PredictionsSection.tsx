@@ -1,6 +1,8 @@
+
 import PredictionsTable from "./PredictionsTable";
 import { Database, Search, Award, History, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
+
 const PredictionsSection = () => {
   return <section className="section-padding">
       <div className="container mx-auto">
@@ -55,14 +57,30 @@ const PredictionsSection = () => {
           </div>
           
           {/* Benefits Section - Checklist style */}
-          
+          <div className="my-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">Vantaggi chiave</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {[
+                "Decisioni basate sui dati, non sulle emozioni",
+                "Trasparenza totale sui risultati ottenuti",
+                "Risparmio di tempo nell'analisi delle partite",
+                "Indipendenza dai bookmaker e dai tipster"
+              ].map((item, i) => (
+                <div key={i} className="flex items-center p-2">
+                  <div className="bg-green-100 rounded-full p-1 mr-3">
+                    <Check className="h-5 w-5 text-green-600" />
+                  </div>
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
           
           {/* How It Works - Timeline */}
           <div className="my-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Come funziona</h2>
             <div className="relative">
-              {/* Timeline line */}
-              <div className="hidden md:block absolute left-0 right-0 top-1/2 h-1 bg-gray-200 -translate-y-1/2"></div>
+              {/* Timeline line removed as requested */}
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {[{
@@ -91,4 +109,5 @@ const PredictionsSection = () => {
       </div>
     </section>;
 };
+
 export default PredictionsSection;
